@@ -21,3 +21,5 @@ func _process(delta):
 			global_position.y += 3
 		if Input.is_action_pressed("ui_up"):
 			global_position.y -= 3
+		if Input.is_action_just_pressed("ui_accept"):
+			modulate = Color(randf_range(0.0,2.0),randf_range(0.0,2.0),randf_range(0.0,2.0))
